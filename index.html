@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hulu Welcome Message</title>
+	<style type="text/css" media="all">
+		@font-face {
+			font-family: 'Graphik-Light';
+			src:url('https://assetshuluimcom-a.akamaihd.net/FONTS/Graphik-Light-Web.eot') format('embedded-opentype'), url('https://assetshuluimcom-a.akamaihd.net/FONTS/Graphik-Light-Web.woff') format('woff'), url('https://assetshuluimcom-a.akamaihd.net/FONTS/Graphik-Light-Web.woff2') format('woff2'), url('https://assetshuluimcom-a.akamaihd.net/FONTS/Graphik-Light.otf') format('opentype');
+			font-style: normal;
+			font-weight: 200;
+		}
+		@font-face {
+			font-family: 'Graphik-Extralight';
+			src:url('https://assetshuluimcom-a.akamaihd.net/FONTS/Graphik-Extralight-Web.eot') format('embedded-opentype'), url('https://assetshuluimcom-a.akamaihd.net/FONTS/Graphik-Extralight-Web.woff') format('woff'), url('https://assetshuluimcom-a.akamaihd.net/FONTS/Graphik-Extralight-Web.woff2') format('woff2'), url('https://assetshuluimcom-a.akamaihd.net/FONTS/Graphik-Extralight.otf') format('opentype');
+			font-style: normal;
+			font-weight: 200;
+		}
+		@font-face {
+			font-family: 'Graphik-Medium';
+			src:url('https://assetshuluimcom-a.akamaihd.net/FONTS/Graphik-Medium-Web.eot') format('embedded-opentype'), url('https://assetshuluimcom-a.akamaihd.net/FONTS/Graphik-Medium-Web.woff') format('woff'), url('https://assetshuluimcom-a.akamaihd.net/FONTS/Graphik-Medium-Web.woff2') format('woff2'), url('https://assetshuluimcom-a.akamaihd.net/FONTS/Graphik-Medium.otf') format('opentype');
+			font-style: normal;
+			font-weight: 200;
+		}
+		@font-face {
+			font-family: 'Graphik-Regular';
+			src:url('https://assetshuluimcom-a.akamaihd.net/FONTS/Graphik-Regular-Web.eot') format('embedded-opentype'), url('https://assetshuluimcom-a.akamaihd.net/FONTS/Graphik-Regular-Web.woff') format('woff'), url('https://assetshuluimcom-a.akamaihd.net/FONTS/Graphik-Regular-Web.woff2') format('woff2'), url('https://assetshuluimcom-a.akamaihd.net/FONTS/Graphik-Regular.otf') format('opentype');
+			font-style: normal;
+			font-weight: 200;
+		}
+		@font-face {
+			font-family: 'Graphik-Semibold';
+			src:url('https://assetshuluimcom-a.akamaihd.net/FONTS/Graphik-Semibold-Web.eot') format('embedded-opentype'), url('https://assetshuluimcom-a.akamaihd.net/FONTS/Graphik-Semibold-Web.woff') format('woff'), url('https://assetshuluimcom-a.akamaihd.net/FONTS/Graphik-Semibold-Web.woff2') format('woff2'), url('https://assetshuluimcom-a.akamaihd.net/FONTS/Graphik-Semibold.otf') format('opentype');
+			font-style: normal;
+			font-weight: 200;
+		}
+	  </style>
+	  <style type="text/css" media="all">
+		* { -webkit-text-size-adjust: none; }
+		.ExternalClass * { line-height: 100%; }
+		.applelinksfooter a {color:#b9b9b9 !important; text-decoration:none !important;}
+		.applelinksdisclaimer a {color:#FFFFFF !important; text-decoration:none !important;}
+		.owaContextualHighlight span { 
+			border:none!important;
+			color:inherit!important;
+		}
+		
+		
+		
+		@media only screen and (max-width: 600px) {
+		
+		body {
+			width: 100%;
+			min-width: 100%;
+			position: relative;
+			top: 0;
+			left: 0;
+			right: 0;
+			margin: 0;
+			padding: 0;
+		}
+		.marginFix {
+			position: relative;
+			top: 0;
+			left: 0;
+			right: 0;
+		}
+		.full-width-container {
+			width: 100% !important;
+			min-width: 100% !important;
+		}
+		.hide {
+			width: 0px !important;
+			height: 0px !important;
+			display: none !important;
+		}
+		.stackTbl {
+			width: 100% !important;
+			display: table !important;
+		}
+		.stackTblMarginTop {
+			width: 100% !important;
+			display: table !important;
+			margin-top: 45px !important;
+		}
+		.stackTblMarginTop25 {
+			width: 100% !important;
+			display: table !important;
+			margin-top: 25px !important; 
+		}
+		.center {
+			margin: 0px auto !important;
+		}
+		.floatLeft {
+			float: left !important;
+			width: 35% !important;
+		}
+		.floatRight {
+			float: right !important;
+			width: 60% !important;
+		}
+		
+
+		.mobilePaddingLR {
+			padding-left: 15px !important;
+			padding-right: 15px !important;
+		}
+		.paddingTop25 {
+			padding-top: 25px !important
+		}
+		.paddingLeft10 {
+			padding-left: 10px !important
+		}
+		.paddingLeft25 {
+			padding-left: 25px !important
+		}
+		.removeLRPadding {
+			padding-left: 0px !important;
+			padding-right: 0px !important
+		}
+		
+		.imageUpsize {
+			width: auto !important;
+			height: auto !important;
+			max-width: 100% !important
+		}
+		.fullWidthImg {
+			width: 100% !important;
+			height: auto !important;
+		}
+		.textAlignCenter {
+			text-align: center !important
+		}
+		.textAlignLeft {
+			text-align: left !important
+		}
+		.fullWidthCTA {
+			width: 90% !important;
+		}
+		.fontSize20 {
+			font-size: 20px !important;
+			line-height: 24px !important;
+		}
+		.fontSize16 {
+			font-size: 16px !important;
+			line-height: 20px !important;
+		}
+		.fontSize40 {
+			font-size: 40px !important;
+			line-height: 44px !important;
+		}
+		
+		
+		}
+
+	  </style>
+</head>
+<body style="margin:0px; padding:0px;">
+    <style type="text/css">
+      div.preheader 
+      { display: none !important; }
+    </style>
+    <div class="preheader" style="font-size: 1px; display: none !important;">Start watching amazing shows on your TV today.</div>
+    <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%"
+    class="marginFix" bgcolor="#FFFFFF">
+    
+      <tr>
+        <td width="100%" align="center">
+          <table cellpadding="0" cellspacing="0" border="0" width="600" class="full-width-container">
+            <tr>
+              <td width="600" align="center" valign="top">
+            
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                  <tr>
+                    <td align="center" valign="top" style="padding: 22px 0px 22px 0px;">
+                      <a href="#">
+                        <img src="img/hulu logo.png"
+                        width="78" height="25" style="display: block; font-size: 20px; color: #3dbb3d;"
+                        border="0" alt="Hulu" />
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+                
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                  <tr>
+                    <td width="600" align="center" valign="top" style="min-width:600px;background-size: cover; background-repeat: no-repeat;"
+                    class="full-width-container" bgcolor="#3dbb3d" background="http://image.hulumail.com/lib/fe9515707360007972/m/4/welcome_header-BG_600x303.png">
+                      
+                          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                              <td align="center" valign="top" style="font-family: 'Graphik-Light', Helvetica, Arial, sans-serif; font-size: 60px; line-height: 64px;color: #FFFFFF; padding: 40px 20px 45px 20px"
+                              class="fontSize40">Hello,
+                                <br />Romeo Omoregie</td>
+                            </tr>
+                          </table>
+                         
+                    </td>
+                  </tr>
+                </table>
+                
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      
+      <tr>
+        <td align="center">
+          <table cellpadding="0" cellspacing="0" border="0" width="600" class="full-width-container">
+            <tr>
+              <td align="center" valign="top">
+                
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                  <tr>
+                    <td align="center" valign="top" style="font-family: 'Graphik-Light', Helvetica, Arial, sans-serif; font-size: 36px; line-height: 40px;color: #666666; padding: 45px 40px 25px 40px"
+                    class="mobilePaddingLR">Welcome to the TV that gets you!</td>
+                  </tr>
+                </table>
+            
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                  <tr>
+                    <td align="center" valign="top" class="mobilePaddingLR">
+                      <table cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;">
+                        <tr>
+                          <td align="center" valign="top" style="padding-bottom: 40px">
+                            <img src="img/hulu DeviceStacks_.png"
+                            width="560" style="display: block; font-size: 20px; color: #666666;" border="0"
+                            alt="College Basketball and The Handmaid's Tale" class="fullWidthImg" />
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+   
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                  <tr>
+                    <td align="left" valign="top" style="padding: 0px 40px 40px 40px" class="mobilePaddingLR">
+                      <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        
+                        <tr>
+                          <td align="right" valign="top" style="padding-top: 5px">
+                            <img src="img/welcome_CHECK-ICON_20x21.png"
+                            width="20" height="21" style="display: block; font-size: 20px; color: #666666;"
+                            border="0" alt="check icon" />
+                          </td>
+                          <td align="left" valign="top" style="font-family: 'Graphik-Light', Helvetica, Arial, sans-serif; font-size: 20px; line-height: 24px;color: #666666; padding: 0px 0px 20px 15px">Thank you for selecting <span style="color: #3dbb3d;">Hulu + Live TV </span> for
+                            your Hulu plan.</td>
+                        </tr>
+                        
+                        <tr>
+                          <td align="right" valign="top" style="padding-top: 5px">
+                            <img src="img/welcome_CHECK-ICON_20x21.png"
+                            width="20" height="21" style="display: block; font-size: 20px; color: #666666;"
+                            border="0" alt="check icon" />
+                          </td>
+                          <td align="left" valign="top" style="font-family: 'Graphik-Light', Helvetica, Arial, sans-serif; font-size: 20px; line-height: 24px;color: #666666; padding: 0px 0px 20px 15px">After your 7 Days Free Trial ends, your <span style="color: #3dbb3d;">Mastercard ending in 6981</span> will
+                            be charged <span style="color: #3dbb3d;">$54.99</span>
+                            each month as a recurring transaction.</td>
+                        </tr>
+                        
+                        <tr>
+                          <td align="right" valign="top" style="padding-top: 5px">
+                            <img src="img/welcome_CHECK-ICON_20x21.png"
+                            width="20" height="21" style="display: block; font-size: 20px; color: #666666;"
+                            border="0" alt="check icon" />
+                          </td>
+                          <td align="left" valign="top" style="font-family: 'Graphik-Light', Helvetica, Arial, sans-serif; font-size: 20px; line-height: 24px;color: #666666; padding: 0px 0px 20px 15px">Your first billing charge after your Free Trial ends will be on <span style="color: #3dbb3d;">10/16/2021</span>.</td>
+                        </tr>
+                        
+                        <tr>
+                          <td align="right" valign="top">
+                            <img src="img/welcome_PROFILE-ICON_20x21.png"
+                            width="20" height="21" style="display: block; font-size: 20px; color: #666666;"
+                            border="0" alt="profile icon" />
+                          </td>
+                          <td align="left" valign="top" style="font-family: 'Graphik-Light', Helvetica, Arial, sans-serif; font-size: 20px; line-height: 24px;color: #666666; padding: 0px 0px 20px 15px">For details about your charges, or to put your account on hold or cancel any time
+                            (even before your free trial ends), log in to
+                            <a href="#" style="color: #3dbb3d; text-decoration: none">Your Account</a>.</td>
+                        </tr>
+                        
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      
+      <tr>
+        <td align="center">
+          <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#231437">
+            <tr>
+              <td align="center">
+                <table cellpadding="0" cellspacing="0" border="0" width="600" class="full-width-container">
+                  <tr>
+                    <td align="center" valign="top">
+                      
+                      <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                          <td align="center" valign="top" style="font-family: 'Graphik-Light', Helvetica, Arial, sans-serif; font-size: 36px; line-height: 40px;color: #666666; padding: 45px 40px 0px 40px"
+                          class="mobilePaddingLR">Please complete
+                            <br class="hide" />your account setup.</td>
+                        </tr>
+                        <tr>
+                          <td align="center" valign="top" style="font-family: 'Graphik-Light', Helvetica, Arial, sans-serif; font-size: 20px; line-height: 24px;color: #666666; padding: 20px 35px 45px 35px"
+                          class="mobilePaddingLR">Log in with a
+                            <a href="#" style="color: #3dbb3d;text-decoration: none"> device that supports Hulu + Live TV</a>. If you don't use one
+                            of these supported devices, click
+                            <a href="#" style="color: #3dbb3d;text-decoration: none">here</a> and follow the instructions to confirm your location.
+                            <br />
+                            <br />Complete this setup within your first 30 days to ensure that you can keep streaming
+                            everything in your Hulu plan.</td>
+                        </tr>
+                      </table>
+                      
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF">
+            <tr>
+              <td align="center">
+                <table cellpadding="0" cellspacing="0" border="0" width="600" class="full-width-container">
+                  <tr>
+                    <td align="center" valign="top">
+                      
+                      <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                          <td align="center" valign="top" style="font-family: 'Graphik-Light', Helvetica, Arial, sans-serif; font-size: 36px; line-height: 40px;color: #666666; padding: 45px 40px 45px 40px"
+                          class="mobilePaddingLR">Customize With Add-Ons
+                            </td>
+                        </tr>
+                      </table>
+                      
+                    
+                      <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tr>
+                          <td align="center" style="padding:0px 0px 0px 0px" class="mobilePaddingLR">
+                            
+                            
+                                  <table width="300" align="left" class="stackTbl" cellpadding="0" cellspacing="0"
+                                  border="0" style="display:inline;">
+                                    <tr>
+                                      <td align="right" valign="top">
+                                        <table cellpadding="0" cellspacing="0" border="0" class="center">
+                                          <tr>
+                                            <td width="35" class="hide"></td>
+                                            <td align="center" valign="top">
+                                              <table cellpadding="0" cellspacing="0" border="0" style="box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);">
+                                                <tr>
+                                                  <td align="center" valign="top" style="font-size: 8px; line-height: 8px">
+                                                    <img src="http://image.hulumail.com/lib/fe9515707360007972/m/4/welcomegreenbar_530.jpg"
+                                                    width="248" height="8" style="display: block" border="0" class="fullWidthImg" />
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td bgcolor="#e9e9e9" valign="middle" align="center" style="padding: 20px 15px 40px 15px;border-left: 1px solid #e9e9e9;border-right: 1px solid #e9e9e9;border-bottom: 1px solid #e9e9e9">
+                                                    <table cellpadding="0" cellspacing="0" border="0" class="center">
+                                                      <tr>
+                                                        <td align="center" valign="top" style="font-family: 'Graphik-Light', Helvetica, Arial, sans-serif; font-size: 31px; line-height: 35px;color: #666666; padding: 10px 0px 0px 0px">Enhanced Cloud DVR</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td align="center" valign="top" style="font-family: 'Graphik-Medium', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 20px;color: #3dbb3d; padding: 20px 0px 0px 0px">
+                                                          <a href="#" style="color: #3dbb3d; text-decoration: none">Start Your 30-Day Free Trial</a>
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td align="center" valign="top" style="font-family: 'Graphik-Regular', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 18px;color: #666666; padding: 5px 0px 0px 0px">$14.99/month after Free Trial
+                                                          <br>
+                                                          <br><span>Expand your storage (200 hours)</span> to record more of your favorites for later.</td>
+                                                      </tr>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                            <td width="17" class="hide"></td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                              
+                                  <table width="300" align="right" class="stackTblMarginTop" cellpadding="0" cellspacing="0"
+                                  border="0" style="display:inline;">
+                                    <tr>
+                                      <td align="left" valign="top">
+                                        <table cellpadding="0" cellspacing="0" border="0" class="center">
+                                          <tr>
+                                            <td width="17" class="hide"></td>
+                                            <td align="center" valign="top">
+                                              <table cellpadding="0" cellspacing="0" border="0" style="box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);">
+                                                <tr>
+                                                  <td align="center" valign="top" style="font-size: 8px; line-height: 8px">
+                                                    <img src="http://image.hulumail.com/lib/fe9515707360007972/m/4/welcomegreenbar_530.jpg"
+                                                    width="248" height="8" style="display: block" border="0" class="fullWidthImg" />
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td bgcolor="#e9e9e9" valign="middle" align="center" style="padding: 20px 15px 58px 15px;border-left: 1px solid #e9e9e9;border-right: 1px solid #e9e9e9;border-bottom: 1px solid #e9e9e9">
+                                                    <table cellpadding="0" cellspacing="0" border="0" class="center">
+                                                      <tr>
+                                                        <td align="center" valign="top" style="font-family: 'Graphik-Light', Helvetica, Arial, sans-serif; font-size: 31px; line-height: 35px;color: #666666; padding: 10px 0px 0px 0px">Unlimited Screens</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td align="center" valign="top" style="font-family: 'Graphik-Medium', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 20px;color: #3dbb3d; padding: 20px 0px 0px 0px">
+                                                          <a href="#" style="color: #3dbb3d; text-decoration: none">Start Your 30-Day Free Trial</a>
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td align="center" valign="top" style="font-family: 'Graphik-Regular', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 18px;color: #666666; padding: 5px 0px 0px 0px">$14.99/month after Free Trial
+                                                          <br>
+                                                          <br>Stream simultaneously on unlimited in&#45;home screens.</td>
+                                                      </tr>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                            <td width="35" class="hide"></td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <table cellpadding="0" cellspacing="0" border="0" width="600" class="full-width-container">
+            <tr>
+              <td align="center" valign="top" style="padding-top: 40px">
+                
+                <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                  <tr>
+                    <td align="center" class="mobilePaddingLR">
+                      <table cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);">
+                        <tr>
+                          <td align="center">
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <td valign="top" align="center" style="font-size: 8px; line-height: 8px">
+                                  <img src="http://image.hulumail.com/lib/fe9515707360007972/m/4/welcomegreenbar_530.jpg"
+                                  width="532" height="8" style="display: block;" border="0" class="full-width-container"
+                                  />
+                                </td>
+                              </tr>
+                            </table>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                              <tr>
+                                <td align="center" style="padding:0px 0px 0px 0px;border-left: 1px solid #e9e9e9;border-right: 1px solid #e9e9e9;border-bottom: 1px solid #e9e9e9">
+                                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                    <tr>
+                                      <td align="center" style="font-family: 'Graphik-Light', Helvetica, Arial, sans-serif; color: #666666; font-size: 32px;line-height: 36px; padding: 30px 15px 0px 15px">Your favorite channels are on.*</td>
+                                    </tr>
+                                    <tr>
+                                      <td align="center">
+                                        <img src="img/images - 2021-10-09T215328.945.jpeg"
+                                        width="530" style="display: block; border: 0; font-size: 20px; color: #666666;"
+                                        class="fullWidthImg" alt="Supported TV Networks" />
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+  
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                  <tr>
+                    <td height="40">&nbsp;</td>
+                  </tr>
+                </table>
+                
+                <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                  <tr>
+                    <td align="center" valign="top" class="mobilePaddingLR">
+                      <table cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);">
+                        <tr>
+                          <td align="center" valign="top">
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <td valign="top" align="center" style="font-size: 8px; line-height: 8px">
+                                  <img src="http://image.hulumail.com/lib/fe9515707360007972/m/4/welcomegreenbar_530.jpg"
+                                  width="532" height="8" style="display: block;" border="0" class="full-width-container"
+                                  />
+                                </td>
+                              </tr>
+                            </table>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                              <tr>
+                                <td align="center" style="padding:30px 0px 28px 0px;border-left: 1px solid #e9e9e9;border-right: 1px solid #e9e9e9;border-bottom: 1px solid #e9e9e9">
+                                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                    <tr>
+                                      <td align="center" style="font-family: 'Graphik-Regular', Helvetica, Arial, sans-serif; color: #666666; font-size: 14px;line-height: 18px; padding: 0px 15px 15px 15px">Device Compatibility</td>
+                                    </tr>
+                                    <tr>
+                                      <td align="center">
+                                        <img src="img/images - 2021-10-09T220331.015.jpeg"
+                                        width="530" height="auto" style="display: block; border: 0; font-size: 20px; color: #666666;"
+                                        class="fullWidthImg" alt="Device Availability" />
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                  <tr>
+                    <td height="10">&nbsp;</td>
+                  </tr>
+                </table>
+                
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="">
+                  <tr>
+                    <td align="center" style="font-family: 'Graphik-Regular', Helvetica, Arial, sans-serif; color: #b9b9b9;font-size: 9px; line-height: 12px; padding: 0px 25px 0px 25px"
+                    class="mobilePaddingLR">Apple and Apple TV, Android and Chromecast, Xbox One, fireTV, Roku and Samsung
+                      are trademarks of Apple, Inc., Google Inc., Microsoft Corporation, <span class="applelinksfooter">Amazon.com</span>,
+                      Inc., Roku, Inc. and Samsung Electronics America, Inc., respectively.
+                      <br />*Live TV content, including the availability of live local channels and regional
+                      sports networks, varies by location.
+                      <br />**Only available on 4th generation Apple TV and Roku models 3600 and above (except
+                      for 4210).</td>
+                  </tr>
+                </table>
+              
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+     
+        <td>
+          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+              <td height="60">&nbsp;</td>
+            </tr>
+          </table>
+          
+        </td>
+      </tr>
+      <tr>
+        <td width="100%" align="center">
+          <table cellpadding="0" cellspacing="0" border="0" width="600" class="full-width-container">
+            <tr>
+              <td width="600" align="center" style="min-width:600px;" class="full-width-container">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                  <tr>
+                    <td align="center" style="padding:0px 0px 40px 0px;">
+                      <!-- Social -->
+                      <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td align="center" valign="top" style="padding-bottom: 20px" bgcolor="#231437">
+                            <table align="center" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td>
+                                  <a href="#">
+                                    <img src="img/white-instagram.png"
+                                    alt="Is" width="42" style="display: block; border: 0;">
+                                  </a>
+                                </td>
+                                <td width="9"></td>
+                                <td>
+                                  <a href="#">
+                                    <img src="img/white-facebook.png"
+                                    alt="Fb" width="42" style="display: block; border: 0;">
+                                  </a>
+                                </td>
+                                <td width="9"></td>
+                                <td>
+                                  <a href="#">
+                                    <img src="img/white-twitter.png"
+                                    alt="Tw" width="42" style="display: block; border: 0;">
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="1" bgcolor="#adb3bf" style="line-height: 1px; font-size: 1px">&nbsp;</td>
+                        </tr>
+                      </table>
+                      
+                      <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#231437">
+                        <tr>
+                          <td style="padding:30px 10px 0px 10px">
+                            
+                                  <table width="175" align="left" class="stackTbl" cellpadding="0" cellspacing="0"
+                                  border="0" bgcolor="#231437" style="display:inline;">
+                                    <tr>
+                                      <td align="right" valign="top">
+                                        
+                                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                          <tr>
+                                            <td align="left" valign="top" style="padding:5px 0px 0px 10px" class="removeLRPadding">
+                                              <a href="#"
+                                              target="_blank">
+                                                <img alt="Hulu" src="img/hulu-logo.png"
+                                                width="78" height="25" style="display: block; font-size: 20px; color: #666666;"
+                                                border="0" class="center">
+                                              </a>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                        
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  
+                                  <table width="405" align="right" class="stackTblMarginTop25" cellpadding="0" cellspacing="0"
+                                  border="0" style="display:inline;">
+                                    <tr>
+                                      <td align="left" valign="top">
+                                        
+                                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                          <tr>
+                                            <td align="left" valign="top" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; line-height: 18px; color: #adb3bf;padding: 0px 0px 0px 0px"
+                                            class="textAlignCenter owaContextualHighlight"><span class="applelinksfooter">Hulu, LLC. 2500 Broadway, 2nd Floor, Santa&nbsp;Monica,&nbsp;CA&nbsp;90404</span>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td align="left" valign="top" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; line-height: 18px; color: #adb3bf;padding: 10px 0px 0px 0px"
+                                            class="textAlignCenter">
+                                              <a href="#"
+                                              target="_blank" style="text-decoration: none; color: #adb3bf"><span style="color:#adb3be;">Preferences</span>
+                                              </a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+                                              <a href="#"
+                                              target="_blank" style="text-decoration: none; color: #adb3be"><span style="color:#adb3bf;">Support</span>
+                                              </a>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                        
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  
+                          </td>
+                        </tr>
+                      </table>
+                      
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      
+    </table>
+    <div>
+      <p align="center" style="font-size: 16px;" > For More designs Contact Romeo Omoregie &copy; Romeo Omoregie All rights reserved</p>
+    </div>
+    </custom>
+  </body>
+
+</html>
+	
+</body>
+</html>
